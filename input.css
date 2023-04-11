@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* How to write these CSS to Tailwind CSS? */
+
+body {
+  background: url('./images/bg-tablet-pattern.svg') no-repeat right -100px top -60px/110%
+}
+
+@media screen and (min-width:640px) {
+  body {
+    background: url('./images/bg-tablet-pattern.svg') no-repeat right -100px top -60px,
+      url('./images/bg-tablet-pattern.svg') no-repeat bottom 600px left -500px
+  }
+}

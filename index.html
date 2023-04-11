@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./dist/index.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Manage landing page</title>
+</head>
+
+<body class="font-['Be_Vietnam_Pro',sans-serif] leading-loose">
+
+  <!-- Navbar -->
+  <header class="container mx-auto relative flex items-center justify-between py-8 px-6">
+    <a href="/"><img src="./dist/images/logo.svg" alt="Logo"></a>
+
+    <button class="md:hidden" id="nav-hamburger-btn"><img id="hamburger-btn-img" src="./dist/images/icon-hamburger.svg"
+        alt="Hamburger menu"></button>
+
+    <nav id="nav-menu"
+      class="hidden absolute top-full left-0 right-0 mx-6 bg-white drop-shadow rounded-md md:inline-block md:static md:bg-transparent md:drop-shadow-none">
+      <ul class="flex flex-col items-center py-4 md:flex-row md:gap-x-8">
+        <li><a href="" class="inline-block my-3 hover:text-dark-grayish-blue md:my-0">Pricing</a></li>
+        <li><a href="" class="inline-block my-3 hover:text-dark-grayish-blue md:my-0">Product</a></li>
+        <li><a href="" class="inline-block my-3 hover:text-dark-grayish-blue md:my-0">About Us</a></li>
+        <li><a href="" class="inline-block my-3 hover:text-dark-grayish-blue md:my-0">Careers</a></li>
+        <li><a href="" class="inline-block my-3 hover:text-dark-grayish-blue md:my-0">Community</a></li>
+      </ul>
+    </nav>
+
+    <!-- CTA button -->
+    <a class="hidden rounded-full px-8 py-2 bg-bright-red text-white drop-shadow-[0_8px_8px_hsl(12,88%,59%,.3)] hover:bg-very-bright-red md:inline-block"
+      href="">
+      Get Started
+    </a>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="container mx-auto mt-10 mb-20 px-6 md:flex md:flex-row-reverse md:items-center">
+      <img src="./dist/images/illustration-intro.svg" alt="Illustration intro" class="md:w-1/2">
+
+      <div class="text-center md:text-start md:w-1/2 md:max-w-[500px] md:mr-auto">
+        <h1 class="text-4xl leading-tight my-4 font-bold text-dark-blue">Bring everyone together to build better
+          products
+        </h1>
+        <p class="text-xl leading-relaxed mt-2 mb-8 text-dark-grayish-blue">
+          Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in
+          view.
+        </p>
+
+        <!-- CTA button -->
+        <a class="inline-block rounded-full px-8 py-2 bg-bright-red text-white drop-shadow-[0_8px_8px_hsl(12,88%,59%,.3)] hover:bg-very-bright-red"
+          href="">
+          Get Started
+        </a>
+      </div>
+    </section>
+
+    <!-- Feature section -->
+    <section class="container mx-auto my-20 pl-6 flex flex-col items-center md:gap-6 md:flex-row md:items-start">
+      <div class=" pr-6 text-center md:text-start md:px-0 md:w-1/2 md:max-w-[500px] md:mr-auto">
+        <h2 class="text-3xl leading-relaxed mb-4 font-bold text-dark-blue">
+          What's different about Manage?
+        </h2>
+        <p class="mt-2 mb-14 text-dark-grayish-blue">
+          Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for
+          modern digital product teams.
+        </p>
+      </div>
+
+      <ol class="space-y-9 md:px-0 md:w-1/2">
+        <li class="grid grid-cols-[min-content,auto]">
+          <span class="flex row-start-1 rounded-l-full justify-self-start bg-very-pale-red pr-5 md:bg-transparent">
+            <span class="flex items-center rounded-full bg-bright-red px-6 py-1 text-lg text-white">01</span>
+          </span>
+          <h3
+            class="pr-6 flex items-center row-start-1 font-bold bg-very-pale-red text-lg text-dark-blue md:bg-transparent">
+            Track company-wide progress
+          </h3>
+
+          <p class="my-2 pr-6 col-span-full text-dark-grayish-blue md:col-start-2">
+            See how your day-to-day tasks fit into the wider vision. Go
+            from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight
+            of the bigger picture again.
+          </p>
+        </li>
+
+        <li class="grid grid-cols-[min-content,auto]">
+          <span class="flex row-start-1 rounded-l-full justify-self-start bg-very-pale-red pr-5 md:bg-transparent">
+            <span class="flex items-center rounded-full bg-bright-red px-6 py-1 text-lg text-white">02</span>
+          </span>
+          <h3
+            class="pr-6 flex items-center row-start-1 font-bold bg-very-pale-red text-lg text-dark-blue md:bg-transparent">
+            Advanced built-in reports
+          </h3>
+
+          <p class="my-2 pr-6 col-span-full text-dark-grayish-blue md:col-start-2">
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders
+            informed.
+          </p>
+        </li>
+
+        <li class="grid grid-cols-[min-content,auto]">
+          <span class="flex row-start-1 rounded-l-full justify-self-start bg-very-pale-red pr-5 md:bg-transparent">
+            <span class="flex items-center rounded-full bg-bright-red px-6 py-1 text-lg text-white">03</span>
+          </span>
+          <h3
+            class="pr-6 flex items-center row-start-1 font-bold bg-very-pale-red text-lg text-dark-blue md:bg-transparent">
+            Everything you need in one place
+          </h3>
+
+          <p class="my-2 pr-6 col-span-full text-dark-grayish-blue md:col-start-2">
+            Stop jumping from one service to another to communicate, store
+            files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="my-20 px-6">
+      <div class="container mx-auto text-center">
+        <h2 class="mb-10 text-3xl font-bold text-dark-blue">
+          What's different about Manage?
+        </h2>
+
+        <section>
+          <div id="testimonials-display-box" class="md:flex md:flex-row md:gap-6 md:overflow-scroll"> </div>
+          <div id="testimonial-switch-btns" class="space-x-1"> </div>
+        </section>
+      </div>
+
+      <!-- CTA button -->
+      <a class="block rounded-full w-fit mt-10 mx-auto px-8 py-2 bg-bright-red text-white drop-shadow-[0_8px_8px_hsl(12,88%,59%,.3)] hover:bg-very-bright-red md:mb-10"
+        href="">
+        Get Started
+      </a>
+      </div>
+    </section>
+
+    <!-- Call to action section -->
+    <section
+      class="bg-[url('./images/bg-simplify-section-mobile.svg')] bg-no-repeat bg-bright-red text-center text-white px-6 py-20 md:bg-[url('./images/bg-simplify-section-desktop.svg')]">
+      <div class="container mx-auto items-center md:flex md:justify-between">
+        <h2 class="text-4xl font-bold md:max-w-[500px] md:text-left">Simplify how your team works today.</h2>
+
+        <!-- CTA button -->
+        <a href=""
+          class="inline-block rounded-full mt-8 px-8 py-2 bg-white text-bright-red hover:text-very-bright-red md:m-0">
+          Get Started
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-very-dark-blue px-6 text-white">
+    <div class="container mx-auto py-16 grid justify-items-center gap-12 items-center md:items-start">
+      <form
+        class="justify-self-stretch flex flex-wrap justify-between gap-4 md:col-start-3 md:max-w-[330px] md:justify-self-end">
+        <input required type="email" class="rounded-full px-6 py-2 flex-1 text-very-dark-blue min-w-0"
+          placeholder="Updates in your inbox...">
+        <button
+          class="inline-block rounded-full px-8 py-2 bg-bright-red text-white hover:bg-very-bright-red">GO</button>
+      </form>
+
+      <!-- Navigation links -->
+      <nav class="w-full md:row-start-1 md:row-end-3 md:col-start-2 md:justify-self-start md:justify-start">
+        <ul class="flex justify-around">
+          <div class="flex flex-col gap-1 md:flex-1">
+            <li><a href="" class="w-fit hover:text-bright-red">Home</a></li>
+            <li><a href="" class="w-fit hover:text-bright-red">Pricing</a></li>
+            <li><a href="" class="w-fit hover:text-bright-red">Products</a></li>
+            <li><a href="" class="w-fit hover:text-bright-red">About</a></li>
+          </div>
+          <div class="flex flex-col gap-1 md:flex-1">
+            <li><a href="" class="w-fit hover:text-bright-red">Careers</a></li>
+            <li><a href="" class="w-fit hover:text-bright-red">Community</a></li>
+            <li><a href="" class="w-fit hover:text-bright-red">Privacy Policy</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <!-- Social media links -->
+      <ul class="flex gap-8 items-center md:row-start-2 md:col-end-2 md:justify-self-start md:gap-4">
+        <li class='flex-shrink-0'>
+          <a href=""
+            class="hover:[filter:invert(56%)_sepia(35%)_saturate(6617%)_hue-rotate(338deg)_brightness(98%)_contrast(93%)]">
+            <img class="w-8 md:w-[revert]" src="./dist/images/icon-facebook.svg" alt="Facebook logo">
+          </a>
+        </li>
+        <li class='flex-shrink-0'>
+          <a href=""
+            class="hover:[filter:invert(56%)_sepia(35%)_saturate(6617%)_hue-rotate(338deg)_brightness(98%)_contrast(93%)]">
+            <img class="w-8 md:w-[revert]" src="./dist/images/icon-youtube.svg" alt="YouTube logo">
+          </a>
+        </li>
+        <li class='flex-shrink-0'>
+          <a href=""
+            class="hover:[filter:invert(56%)_sepia(35%)_saturate(6617%)_hue-rotate(338deg)_brightness(98%)_contrast(93%)]">
+            <img class="w-8 md:w-[revert]" src="./dist/images/icon-twitter.svg" alt="Twitter logo">
+          </a>
+        </li>
+        <li class='flex-shrink-0'>
+          <a href=""
+            class="hover:[filter:invert(56%)_sepia(35%)_saturate(6617%)_hue-rotate(338deg)_brightness(98%)_contrast(93%)]">
+            <img class="w-8 md:w-[revert]" src="./dist/images/icon-pinterest.svg" alt="Pinterest Logo">
+          </a>
+        </li>
+        <li class='flex-shrink-0'>
+          <a href=""
+            class="hover:[filter:invert(56%)_sepia(35%)_saturate(6617%)_hue-rotate(338deg)_brightness(98%)_contrast(93%)]">
+            <img class="w-8 md:w-[revert]" src="./dist/images/icon-instagram.svg" alt="Instagram logo">
+          </a>
+        </li>
+      </ul>
+
+      <div class="md:row-start-1 md:col-span-1 md:justify-self-start">
+        <img src="./dist/images/logo-white.svg" alt="Logo">
+      </div>
+
+      <p class="text-dark-grayish-blue md:justify-self-end">Copyright 2020. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "manage-landing-page-master",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -o ./dist/index.css --minify",
+    "dev": "npx tailwindcss -i ./input.css -o ./dist/index.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
